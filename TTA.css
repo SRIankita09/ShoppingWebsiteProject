@@ -1,0 +1,205 @@
+body {
+  background-image: url(watercolour.jpg);
+  background-attachment: fixed;
+}
+
+div {
+  min-width: 10vh;
+  min-height: 10vh;
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+.row {
+  background-color: rgba(255,255,255, 1);
+  padding: 3%;
+  margin: 3%;
+}
+
+.row img {
+  max-height: 20em;
+  object-fit: cover;
+}
+
+.carousel-item img {
+  max-width: none;
+  max-height: none;
+}
+
+img#logo {
+  width: 50%;
+  max-width: 90%;
+  min-width: 80%;
+  display: flex;
+  align-content: center;
+  padding: 3%;
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  border-radius: 50%
+}
+
+img {
+width: 50%;
+display: flex;
+align-content: center;
+padding: 3%;
+margin: auto;
+}
+
+.headers {
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  padding-top: 3%;
+}
+
+.nav a {
+  color: purple;
+  text-decoration: none
+}
+
+.nav a:hover {
+  color: purple;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.imgnav img {
+  border-radius: 50%;
+  width: 9em;
+}
+
+
+.imgnav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  flex-shrink: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.imgnav img:hover {
+  background-color: white;
+}
+
+ul#details {
+  list-style: none
+}
+
+footer {
+  background: none repeat scroll 0 0 #ffe6cc;
+  font-family: 'sansationregular';
+  height: 15% auto;
+  margin-top: 4%;
+  margin-bottom: 0&
+  width: 100%;
+}
+
+.social-media center {
+  padding-top: 3%;
+  font-family: 'Courgette', cursive;
+  font-size: 1.2em;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  flex-shrink: 1;
+  padding: 3%;
+}
+
+.social-media i {
+  font-size: 2.5em;
+}
+
+.social-media a {
+  color: black;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
